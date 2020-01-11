@@ -8,28 +8,32 @@ var myPsychic = [
                     ["j","o","u","r","n","e","y"]
                 ];
 
-var userGuess;
+var userGuess = '';
 var userWins = 0;
 var userLosses = 0;
 var totalGuesses = 0;
 var myIndex = 0;
 var myIndexOf = 0;
 
-// Computer grabs a random array index value from var myPsychic
-var random = Math.floor(Math.random()*(myPsychic.length-1)); 
+ 
 
 function getPsycgicWord() {
-    // document.querySelector("#myPsychic").innerHTML = "myPsychic: " + psychicWord;
-       document.write(random);
+        //Computer grabs a random array index value from var myPsychic
+        var random = Math.floor(Math.random()*(myPsychic.length-1));
+        //document.write(random);
+        document.write(myPsychic[random]);
+
     }
-    
-// Function runs when user selects a letter 
-// document.onkeyup = function(event) {
-//     //Determine which key was selected by user
-//       var userGuess = event.key;  
 
-// }
+    document.onkeyup = function(event) {
 
-//     userGuess.textContent = userGuess;
+        // Determines which key was pressed.
+        var userGuess = event.key;
+        console.log(userGuess);
+    }
+
+    getPsycgicWord();
+
+
 
 
