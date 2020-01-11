@@ -1,18 +1,11 @@
 
 var myPsychic = [
-                    ["genesis"],
-                    ["beatles"], 
-                    ["queen"], 
-                    ["foghat"], 
-                    ["foreigner"], 
-                    ["journey"]
-                    
-                    // ["g","e","n","e","s","i","s"],
-                    // ["b","e","a","t","l","e","s"], 
-                    // ["q","u","e","e","n"], 
-                    // ["f","o","g","h","a","t"], 
-                    // ["f","o","r","e","i","g","n","e","r"], 
-                    // ["j","o","u","r","n","e","y"]
+                    "genesis",
+                    "beatles", 
+                    "queen", 
+                    "foghat", 
+                    "foreigner", 
+                    "journey"
                 ];
 
 var userGuess = '';
@@ -23,9 +16,8 @@ var myIndex = 0;
 var myIndexOf = 0;
 
  
-
+//This function selects a random array index value from var myPsychic[]
 function getPsycgicWord() {
-        //Computer grabs a random array index value from var myPsychic
         var random = Math.floor(Math.random()*(myPsychic.length-1));
         //document.write(random);
         document.write(myPsychic[random]);
